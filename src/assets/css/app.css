@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+:root {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f5f3f3;
+}
+
+.center-align {
+    text-align: center;
+    justify-content: center;
+}
+
+#app {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+}
+
+
+.components {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    .components {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 100%;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .components {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .components {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100vh auto;
+        column-gap: 10px;
+    }
+}
+

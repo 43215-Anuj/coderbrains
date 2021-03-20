@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+#programs {
+    padding: 5px 10px;
+    min-height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto ;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.card {
+    width: 90%;
+    background: #fff;
+    border-radius: 10px;
+    height: 520px;
+    min-height: 520px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+    #programs {
+        padding: 5px 10px;
+        min-height: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto ;
+        column-gap: 5px;
+        row-gap: 5px;
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+    #programs {
+        padding: 5px 10px;
+        min-height: 100%;
+    
+        display: block;
+        /* grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto ;
+        column-gap: 5px;
+        row-gap: 5px; */
+    } 
+
+    .card {
+        width: 45%;
+        background: #fff;
+        border-radius: 10px;
+        height: 480px;
+        max-height: 520px;
+        padding: 5px;
+        margin: 20px 0;
+        box-shadow: 0 0 10px 0 #919191 ;
+        margin: 10px 5px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #programs {
+        padding: 5px 10px;
+        min-height: fit-content;
+        display: block;
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        column-gap: 5px;
+        row-gap: 5px; */
+    } 
+    .card {
+        position: relative;
+        display: inline;
+        width: 100%;
+        flex-wrap: wrap;
+        background: #fff;
+        border-radius: 10px;
+        height: 520px;
+        min-height: 520px;
+        padding: 5px;
+        margin: 20px 0;
+        box-shadow: 0 0 10px 0 #919191 ;
+    }
+    
+}
+
+.card p {
+    justify-items: center;
+    text-align: center;
+    font-weight: 300!important;
+    color: blue;
+}
+
+.card .image {
+    padding: 5px;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.card .image img {
+    width: 80%;
+    background: #b1e2ff;
+    justify-self: center ;
+}
+
+.mission-name-id {
+    color: #2828e0;
+}
+
+span {
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+}
